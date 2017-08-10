@@ -52,10 +52,8 @@ var loop = function (strip, count) {
     for (var l = 0 ; l<LENGTH; l++){
         //var color = roma[(count + l)%2];
         var c = tinycolor(getColor((count + l ) %10));
-        c = c.spin(l*6);
+        //c = c.spin(l*6);
         strip.pixel(l).color(c.toHexString());
-
-                
     }
     strip.show();
     if (count>LIMIT){

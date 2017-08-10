@@ -1,5 +1,5 @@
 var xbox = require('xbox-controller-node');
- 
+
 xbox.on('a', function () {
   console.log('[A] button press');
 });
@@ -11,7 +11,7 @@ xbox.on('a:release', function () {
 xbox.on('start', function () {
   console.log('[Start] button press');
 });
- 
+
 xbox.on('left', function () {
   console.log('[LEFT] button press');
 });
