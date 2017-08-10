@@ -1,1 +1,0 @@
-require('xbox-controller-node').configure();
