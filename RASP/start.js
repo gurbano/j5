@@ -1,4 +1,4 @@
-import RS from './server/app'
+import RS from './koa/koa'
 import SR from './modules/sensors'
 //carica i moduli
 const SerialReader = new SR();
