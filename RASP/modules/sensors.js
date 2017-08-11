@@ -10,11 +10,11 @@ const SerialReader = function () {
 	this.port.pipe(parser);
 	this.port.on('open', function(){
 		self.isOpen = true;
-		parser.on('data', function(data){
-	    	//console.log(data.toString()); temp|hum|
+		parser.on('data', function(data){	    	
 	    	let splitData = data.toString().split('|');
 	    	self.data['temp'] = splitData[0];
 	    	self.data['hum'] = splitData[1];
+	    	console.log(self.data); 
 		});
 	})
 }

@@ -24,6 +24,7 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "johnny-five": "^0.8.81",
+    "koa": "^2.3.0",
     "koa-router": "^7.2.1",
     "serialport": "^5.0.0"
   },
