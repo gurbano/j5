@@ -22,6 +22,7 @@
     "url": "https://github.com/gurbano/j5/issues"
   },
   "dependencies": {
+    "better-xbox-controller": "^0.1.3",
     "fs": "0.0.1-security",
     "johnny-five": "^0.8.81",
     "koa-router": "^7.2.1",
