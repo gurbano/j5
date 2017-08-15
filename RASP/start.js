@@ -16,14 +16,11 @@ const SerialReader = new SR(function(err, port){
 const server = new RS();
 import testRoute from './routes/test'
 server.addRoute(testRoute);
-server.addHook('sensors','temp',async function (ctx) {
-	ctx.body = SerialReader.getTemp();
-	return ctx;
-});
-server.addHook('sensors','hum',async function (ctx) {
-	ctx.body = SerialReader.getHum();
-	return ctx;
-});
+
+require('./modules/sensor_routes')(server, SerialReader);
+
+
+var xbox = require('./modules/xbox');
 
 
 server.start(8080)
