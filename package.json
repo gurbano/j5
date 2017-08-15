@@ -25,10 +25,12 @@
     "better-xbox-controller": "^0.1.3",
     "fs": "0.0.1-security",
     "johnny-five": "^0.8.81",
+    "koa": "^2.3.0",
     "koa-router": "^7.2.1",
     "serialport": "^5.0.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-es2015": "^6.24.1"
   }
 }
